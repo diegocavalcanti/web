@@ -22,7 +22,7 @@ const scriptRel = function detectScriptRel() {
   return relList && relList.supports && relList.supports("modulepreload") ? "modulepreload" : "preload";
 }();
 const seen = {};
-const base = "/";
+const base = "/./";
 const __vitePreload = function preload(baseModule, deps) {
   if (!deps || deps.length === 0) {
     return baseModule();
@@ -7598,12 +7598,12 @@ function extractChangingRecords(to, from) {
 const routes = [
   {
     path: "/",
-    component: () => __vitePreload(() => import("./MainLayout.f9df4c81.js"), true ? ["assets/MainLayout.f9df4c81.js","assets/QBtn.d7fadaf7.js","assets/render.7e5f5adc.js"] : void 0),
-    children: [{ path: "", component: () => __vitePreload(() => import("./IndexPage.91fcbd9f.js"), true ? ["assets/IndexPage.91fcbd9f.js","assets/render.7e5f5adc.js"] : void 0) }]
+    component: () => __vitePreload(() => import("./MainLayout.cfc996a8.js"), true ? ["assets/MainLayout.cfc996a8.js","assets/QBtn.6c495394.js","assets/render.e72151d8.js"] : void 0),
+    children: [{ path: "", component: () => __vitePreload(() => import("./IndexPage.cd1e3e67.js"), true ? ["assets/IndexPage.cd1e3e67.js","assets/render.e72151d8.js"] : void 0) }]
   },
   {
     path: "/:catchAll(.*)*",
-    component: () => __vitePreload(() => import("./ErrorNotFound.b5bc00c4.js"), true ? ["assets/ErrorNotFound.b5bc00c4.js","assets/QBtn.d7fadaf7.js","assets/render.7e5f5adc.js"] : void 0)
+    component: () => __vitePreload(() => import("./ErrorNotFound.25d1e411.js"), true ? ["assets/ErrorNotFound.25d1e411.js","assets/QBtn.6c495394.js","assets/render.e72151d8.js"] : void 0)
   }
 ];
 var createRouter = route(function() {
@@ -7611,7 +7611,7 @@ var createRouter = route(function() {
   const Router = createRouter$1({
     scrollBehavior: () => ({ left: 0, top: 0 }),
     routes,
-    history: createHistory("/")
+    history: createHistory("/./")
   });
   return Router;
 });
@@ -7625,7 +7625,7 @@ async function createQuasarApp(createAppFn, quasarUserOptions2) {
   };
 }
 var quasarUserOptions = { config: {} };
-const publicPath = `/`;
+const publicPath = `/./`;
 async function start({
   app: app2,
   router
@@ -7678,8 +7678,8 @@ async function start({
 }
 createQuasarApp(createApp, quasarUserOptions).then((app2) => {
   return Promise.all([
-    __vitePreload(() => import("./i18n.80cfe9e4.js"), true ? [] : void 0),
-    __vitePreload(() => import("./axios.9bafeeef.js"), true ? [] : void 0)
+    __vitePreload(() => import("./i18n.1f693c27.js"), true ? [] : void 0),
+    __vitePreload(() => import("./axios.e01ed167.js"), true ? [] : void 0)
   ]).then((bootFiles) => {
     const boot2 = bootFiles.map((entry) => entry.default).filter((entry) => typeof entry === "function");
     start(app2, boot2);

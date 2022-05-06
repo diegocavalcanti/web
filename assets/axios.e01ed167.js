@@ -1,4 +1,4 @@
-import { e as boot } from "./index.733177c2.js";
+import { e as boot } from "./index.4d770d9b.js";
 var axios$4 = { exports: {} };
 var bind$2 = function bind(fn, thisArg) {
   return function wrap() {

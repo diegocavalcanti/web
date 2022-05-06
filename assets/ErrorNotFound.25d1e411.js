@@ -1,6 +1,6 @@
-import { b as QBtn } from "./QBtn.d7fadaf7.js";
-import { _ as _export_sfc, I as defineComponent, J as openBlock, S as createElementBlock, R as createBaseVNode, d as createVNode } from "./index.733177c2.js";
-import "./render.7e5f5adc.js";
+import { b as QBtn } from "./QBtn.6c495394.js";
+import { _ as _export_sfc, I as defineComponent, J as openBlock, S as createElementBlock, R as createBaseVNode, d as createVNode } from "./index.4d770d9b.js";
+import "./render.e72151d8.js";
 const _sfc_main = defineComponent({
   name: "ErrorNotFound"
 });
